@@ -57,19 +57,27 @@ public class Club {
 		
 	}
 
-	public void crearEvento(TipoDeEvento carreraNatacionEnAguasAbiertas, String string) {
+	public void crearEvento(TipoDeEvento tipo, String string) {
 
-		this.tipoDeEvento = carreraNatacionEnAguasAbiertas;
+		competencias.put(string, tipo);
 		
-		
-		
-		
+
 	}
 	
 	public Object inscribirEnEvento(String string, Deportista celeste) {
 
 		return null;
 	}
+	
+	public TipoDeEvento getTipoDeEvento() {
+		return tipoDeEvento;
+	}
+
+	public void setTipoDeEvento(TipoDeEvento tipoDeEvento) {
+		this.tipoDeEvento = tipoDeEvento;
+	}
+
+	
 	
 	@Override
 	public int hashCode() {
@@ -108,6 +116,7 @@ public class Club {
 			return false;
 		return true;
 	}
+
 
 
 

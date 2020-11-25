@@ -42,7 +42,8 @@ public class Evento {
 	}
 
 	public void setParticipantes(Map<Integer, Deportista> participantes) {
-		this.participantes = participantes;
+
+		this.participantes.put(numeroDeInscripcion, (Deportista) participantes);
 	}
 	
 	
